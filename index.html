@@ -2,61 +2,79 @@
 <html lang="ru">
 	<head>
         <title>AOPS - upload & download photo simply</title>
-		<link href="outlines.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets\css\reset.css">
+		<link href="assets\css\outlines.css" rel="stylesheet">
 		<meta charset="utf-8">
 	</head>
 	<body>
 		<header class="header">
-            <div class="logo">
-				<img src="logo.png" alt="logo" width="60" height="40">
-				<br/>
-				<span>AOPS</span>
-			</div>
-			<div class="search-panel"></div>
-			<nav class="catalog">
-				<a class="catalog__item" href="/">Каталог</a>
-				<a class="catalog__item" href="/">Блог</a>
-				<a class="catalog__item" href="/">Создать</a>
-			</nav>
-			<div class="header__border">
-				<img src="assets\imgs\lines\header-border.svg">
+			<div class="wrapper">
+				<div class="header__wrapper">
+					<div class="header__top-wrapper">
+						<div class="header__logo">
+							<a href="/" class="logo__link">
+								<img src="assets\imgs\logo.png" alt="logo" class="logo__pic">
+							</a>
+							<br/>
+							<span class="logo__text">AOPS</span>
+						</div>
+						<div class="header___search-panel">
+							<img src="assets\imgs\search-panel.svg" alt="search-panel">
+						</div>
+						<nav class="header__catalog">
+							<a class="header__catalog-item" href="/">Каталог</a>
+							<a class="header__catalog-item" href="/">Блог</a>
+							<a class="header__catalog-item" href="/">Создать</a>
+						</nav>
+					</div>
+				</div>
+				<div class="header__border">
+					<img src="assets\imgs\lines\header-border.svg">
+				</div>
 			</div>
 		</header>
 		<main class="main">
-            <div class="frases">
+			<div class="frases">
                 <span class="frases__item">AOPS</span>
                 <span class="frases__item">Поиск вдохновения </span>
                 <span class="frases__item">Возможность поделиться чем-то новым</span>
             </div>
-            <div class="galery">
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <button class="show-more-button">
-                <span class="show-more-button__text">
-                    Показать больше
-                </span>
-            </button>
+			<div class="main__content-wrapper">
+				<div class="galery">
+					<div class="galery__item">
+						<img src="assets\imgs\try_main_wrapper.jfif" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="show-more-btn_wrapper">
+					<button class="show-more-btn">
+						<span class="show-more-btn__text">
+							Показать больше
+						</span>
+				</button>
+				</div>
+			</div>
+            
 		</main>
 		<footer>
-            <div class="logo">
-				<img src="logo.png" alt="logo" width="60" height="40">
+			<div class="logo">
+				<a href="/" class="logo__link">
+					<img src="assets\imgs\logo.png" alt="logo" class="logo__pic">
+				</a>
 				<br/>
 				<span>AOPS</span>
 			</div>
