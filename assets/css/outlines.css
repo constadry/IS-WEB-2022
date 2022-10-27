@@ -153,6 +153,10 @@ body {
   margin-bottom: 50px;
 }
 
+/* .galery__item:nth-child(odd) {
+  height: 800px;
+} */
+
 .show-more-btn_wrapper {
   display: flex;
   justify-content: center;
