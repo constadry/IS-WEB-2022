@@ -115,6 +115,13 @@ body {
   color: #222222;
 }
 
+.header__catalog-item:hover {
+  /* color: black; */
+  font-weight: 400;
+  transition-delay: 0.05s;
+  /* transition-duration: 0.1s; */
+}
+
 .logo__pic {
   width: 60px;
   height: 40px;
