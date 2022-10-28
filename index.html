@@ -2,93 +2,123 @@
 <html lang="ru">
 	<head>
         <title>AOPS - upload & download photo simply</title>
-		<link href="outlines.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets\css\reset.css">
+		<link href="assets\css\outlines.css" rel="stylesheet">
 		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/jpg" href="assets\imgs\favicon.ico"/>
 	</head>
 	<body>
 		<header class="header">
-            <div class="logo">
-				<img src="logo.png" alt="logo" width="60" height="40">
-				<br/>
-				<span>AOPS</span>
-			</div>
-			<div class="search-panel"></div>
-			<nav class="catalog">
-				<a class="catalog__item" href="/">Каталог</a>
-				<a class="catalog__item" href="/">Блог</a>
-				<a class="catalog__item" href="/">Создать</a>
-			</nav>
-			<div class="header__border">
-				<img src="assets\imgs\lines\header-border.svg">
+			<div class="wrapper">
+				<div class="header__wrapper">
+					<div class="header__top-wrapper">
+						<div class="header__logo">
+							<a href="/" class="logo__link">
+								<img src="assets\imgs\logo.png" alt="logo" class="logo__pic">
+							</a>
+							<br/>
+							<span class="logo__text">AOPS</span>
+						</div>
+						<div class="header___search-panel">
+							<img src="assets\imgs\search-panel.svg" alt="search-panel">
+						</div>
+						<nav class="header__catalog">
+							<a class="header__catalog-item" href="/">Каталог</a>
+							<a class="header__catalog-item" href="/">Блог</a>
+							<a class="header__catalog-item" href="/">Создать</a>
+						</nav>
+					</div>
+				</div>
+				<div class="header__border">
+					<img src="assets\imgs\lines\header-border.svg">
+				</div>
 			</div>
 		</header>
 		<main class="main">
-            <div class="frases">
-                <span class="frases__item">AOPS</span>
-                <span class="frases__item">Поиск вдохновения </span>
-                <span class="frases__item">Возможность поделиться чем-то новым</span>
+			<div class="frases">
+				<div class="frases__wrapper">
+					<div class="frases__title">AOPS</div>
+					<div class="frases__item">Поиск вдохновения </div>
+					<div class="frases__item">Возможность поделиться чем-то новым</div>
+				</div>
             </div>
-            <div class="galery">
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-                <div class="galery__item">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <button class="show-more-button">
-                <span class="show-more-button__text">
-                    Показать больше
-                </span>
-            </button>
+			<div class="main__content-wrapper">
+				<div class="galery">
+					<div class="galery__item">
+						<img src="assets\imgs\#" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+					<div class="galery__item">
+						<img src="" alt="">
+					</div>
+				</div>
+				<div class="show-more-btn_wrapper">
+					<button class="show-more-btn">
+						<span class="show-more-btn__text">
+							Показать больше
+						</span>
+				</button>
+				</div>
+			</div>
+            
 		</main>
 		<footer>
-            <div class="logo">
-				<img src="logo.png" alt="logo" width="60" height="40">
+			<div class="footer__first-line">
+				<div class="footer__logo">
+				<a href="/" class="logo__link">
+					<img src="assets\imgs\logo.png" alt="logo" class="logo__pic">
+				</a>
 				<br/>
-				<span>AOPS</span>
+				<span class="logo__text">AOPS</span>
 			</div>
 			<div class="contact-us">
-				Контактная информация
+				<span class="bold-text">Контактная информация</span>
+				<br/>
 				<br/>
 				<span class="contact-us__phone">
 					Телефон:
-					<a href="+79518270540">+79518270540</a>
+					&nbsp;&nbsp;
+					<a href="+79518270540"><span class="bold-text">+79518270540</span></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;
 				</span>
 				<span class="contact-us__mail">
 					Электронный адрес:
-					<a href="mailto:behappydtworry@gmail.com">behappydtworry@gmail.com</a>
+					&nbsp;&nbsp;
+					<a href="mailto:behappydtworry@gmail.com"><span class="bold-text">behappydtworry@gmail.com</span></a>
 				</span>
 			</div>
 			<div class="socials">
 				<span class="socials__title">
-                    <b class="socials__title__text">Социальные сети</b>
+                    <b class="socials__title__text bold-text">Социальные сети</b>
                 </span>
-				<div class="socials__icon">
-                    <img src="assets\imgs\social-icons\youtube.svg" alt="youtube-link">
+				<br/>
+				<br/>
+				<div class="socials__icons">
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\youtube.svg" alt="youtube-link">
+					</div>
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\twitter.svg" alt="twitter-link">						
+					</div>
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\instagram.svg" alt="instagram-link">
+					</div>
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\facebook.svg" alt="facebook-link">
+					</div>
 				</div>
-				<div class="socials__icon">
-					<img src="assets\imgs\social-icons\twitter.svg" alt="twitter-link">						
-				</div>
-				<div class="socials__icon">
-                    <img src="assets\imgs\social-icons\instagram.svg" alt="instagram-link">
-				</div>
-				<div class="socials__icon">
-					<img src="assets\imgs\social-icons\facebook.svg" alt="facebook-link">
-				</div>
-			</div>	
+			</div>
 			<div class="footer-inner-border">
                 <img src="assets\imgs\lines\footer-border.svg">
 			</div>
