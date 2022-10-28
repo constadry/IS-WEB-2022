@@ -70,6 +70,10 @@ body {
   line-height: 1.2;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
