@@ -83,12 +83,11 @@ body {
 }
 
 /* header starts */
-
 .header {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 @media (max-width: 1710px) {
@@ -98,9 +97,9 @@ body {
 }
 
 .header__logo {
-  /* margin-top: 20px; */
   margin-right: 10px;
   margin-left: 10px;
+  text-align: center;
 }
 
 .header__wrapper {
@@ -115,15 +114,59 @@ body {
   justify-content: space-around;
 }
 
-.header___search-panel {
+.header__search-panel {
+  margin: 0 1rem;
   width: 60%;
+  position: relative;
+}
+
+.searchbar {
+  width: 100%;
+  background-color: #fafafa;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  padding: 0.3rem;
+  transition: all .1s;
+  transition-delay: .1s;
+}
+
+.searchbar:hover {
+  /* width: 27rem; */
+  height: 2.8rem;
+}
+
+.button {
+  height: 1.7rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  transition: all .1s;
+  transition-delay: .1s;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.searchbar:hover + .button {
+  height: 1.8rem;
+  top: 0.6rem;
+  right: 0.8;
+}
+
+.searchbar::placeholder {
+  /* opacity: .8; */
+  /* color: #88888c; */
+  font-size: 18px;
 }
 
 @media (max-width: 1024px) {
   header {
     height: 40%;
   }
-  .header___search-panel {
+  .header__search-panel {
     width: 90%;
   }
 }
