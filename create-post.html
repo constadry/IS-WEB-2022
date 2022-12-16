@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<title>AOPS - upload & download photo simply</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="assets\css\reset.css">
+	<link href="assets\css\outlines.css" rel="stylesheet">
+	<link href="assets\css\create-post.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/jpg" href="assets\imgs\favicon.ico" />
+    <script src="assets\scripts\detectPage.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__wrapper">
+				<div class="header__top-wrapper">
+					<div class="header__logo">
+						<a href="/" class="logo__link">
+							<img src="assets\imgs\logo.png" alt="logo" class="logo__pic">
+						</a>
+						<br />
+						<span class="logo__text">AOPS</span>
+					</div>
+					<!-- <div class="header___search-panel">
+						<img src="assets\imgs\search-panel.svg" alt="search-panel">
+					</div> -->
+					<div class="header__search-panel">
+						<input type="text" maxlength= "12" placeholder="Search" class="searchbar">
+						<img src="assets\imgs\search-glass.svg" alt="search icon" class="button">
+					  </div>
+					<div class="hamburger-menu">
+						<input id="menu__toggle" type="checkbox" />
+						<label class="menu__btn" for="menu__toggle">
+							<span></span>
+						</label>
+
+						<nav class="header__catalog">
+							<a class="header__catalog-item" href="/">Каталог</a>
+							<a class="header__catalog-item" href="/">Блог</a>
+							<a class="header__catalog-item" href="..\create-post.html" id="create-post">Создать</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="header__border">
+			<img src="assets\imgs\lines\header-border.svg" style="width:100%">
+			</div>
+		</div>
+	</header>
+    <main class="main" style="height: 80vh;">
+		<div class="main__content-wrapper">
+                <form class="create-post-container">
+                    <input type="file" id="post_image" name="post_image">
+					<!-- <br> -->
+                    <label for="autor_name" class="post-for-item">Автор</label>
+					<!-- <br> -->
+                    <input type="text" id="autor_name" name="autor_name">
+					<!-- <br> -->
+                    <label for="post_title" class="post-for-item">Название</label>
+					<!-- <br> -->
+                    <input type="text" id="post_title" name="post_title">
+					<!-- <br> -->
+                    <label for="post_tags" class="post-for-item">Теги</label>
+					<!-- <br> -->
+                    <input type="text" id="post_tags" name="post_tags">
+					<!-- <br> -->
+                  </form>
+        </div>
+	</main>
+    <footer>
+		<div class="footer__first-line">
+			<div class="footer__logo">
+				<a href="/" class="logo__link">
+					<img src="assets\imgs\logo.png" alt="logo" class="logo__pic">
+				</a>
+				<br />
+				<span class="logo__text">AOPS</span>
+			</div>
+			<div class="contact-us">
+				<span class="bold-text">Контактная информация</span>
+				<br />
+				<br />
+				<span class="contact-us__phone">
+					Телефон:
+					&nbsp;&nbsp;
+					<a href="+79518270540"><span class="bold-text">+79518270540</span></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>
+				<span class="contact-us__mail">
+					Электронный адрес:
+					&nbsp;&nbsp;
+					<a href="mailto:behappydtworry@gmail.com"><span
+							class="bold-text">behappydtworry@gmail.com</span></a>
+				</span>
+			</div>
+			<div class="socials">
+				<span class="socials__title">
+					<b class="socials__title__text bold-text">Социальные сети</b>
+				</span>
+				<br />
+				<br />
+				<div class="socials__icons">
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\youtube.svg" alt="youtube-link">
+					</div>
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\twitter.svg" alt="twitter-link">
+					</div>
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\instagram.svg" alt="instagram-link">
+					</div>
+					<div class="socials__icon">
+						<img src="assets\imgs\social-icons\facebook.svg" alt="facebook-link">
+					</div>
+				</div>
+			</div>
+			<div class="footer-inner-border">
+				<img src="assets\imgs\lines\footer-border.svg">
+			</div>
+			<div class="rights">
+				<span class="rights__inner">
+					@2022 AOPS | Все права защищены
+				</span>
+			</div>
+	</footer>
+</body>
+
+</html>

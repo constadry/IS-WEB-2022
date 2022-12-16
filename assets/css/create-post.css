@@ -1,0 +1,51 @@
+.create-post-container {
+    width: 37%;
+    margin: 0 auto;
+    height: 80vh;
+    border: solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.create-post-container #post_image {
+    width: 90%;
+    height: 69%;
+    border: dashed cyan;
+}
+
+.create-post-container input {
+    margin: 3px auto;
+}
+
+.create-post-container input:last-child {
+    margin-bottom: 14px;
+}
+
+/* TODO: подбирать с помощью js ширину соседа */
+.post-for-item {
+    margin-left: 30px;
+}
+
+.create-post-container input[type=text] {
+    width: 90%;
+    height: 3.67%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .create-post-container {
+        width: 80%;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .create-post-container {
+        font-size: 22px;
+        height: 70vh;
+    }
+
+    .create-post-container #post_image {
+        height: 55%;
+    }
+}
