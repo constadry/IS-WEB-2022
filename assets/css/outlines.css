@@ -191,12 +191,21 @@ body {
   color: #222222;
 }
 
+.header__catalog-item.active {
+  font-weight: 400;
+  opacity: .9;
+}
+
 .header__catalog-item:hover {
   font-weight: 400;
   transition-delay: 0.05s;
 }
 
 @media (max-width: 1024px) {
+
+  /* .header {
+    font-size: 32px;
+  } */
 
   .hamburger-menu {
     width: 10%;
@@ -287,6 +296,13 @@ body {
 
 }
 
+@media (max-width: 768px) {
+  .menu__btn {
+    top: 26px;
+    left:  90%;
+  }
+}
+
 .logo__pic {
   width: 60px;
   height: 40px;
@@ -315,6 +331,14 @@ body {
   .frases {
     height: 400px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .frases {
+    height: 400px;
+    margin-top: 20px;
+    font-size: 14px;
   }
 }
 
