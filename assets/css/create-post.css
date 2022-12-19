@@ -1,17 +1,40 @@
 .create-post-container {
     width: 37%;
     margin: 0 auto;
-    height: 80vh;
-    border: solid black;
+    height: 84vh;
     display: flex;
+    border-style: solid;
+    border-width: thin;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.create-post-container #post_image {
+#custom-file-upload {
     width: 90%;
     height: 69%;
-    border: dashed cyan;
+    margin: 10px auto;
+    border: dashed #1b1b1b 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#custom-file-upload.highlight{
+    border: dashed black 2px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+
+.custom-file-upload__text {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #1b1b1b;
+}
+
+input[type="file"] {
+    display: none;
 }
 
 .create-post-container input {
@@ -35,7 +58,7 @@
 @media only screen and (max-width: 1024px) {
     .create-post-container {
         width: 80%;
-        font-size: 32px;
+        font-size: 28px;
     }
 }
 

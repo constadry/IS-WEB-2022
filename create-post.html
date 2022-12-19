@@ -24,9 +24,6 @@
 						<br />
 						<span class="logo__text">AOPS</span>
 					</div>
-					<!-- <div class="header___search-panel">
-						<img src="assets\imgs\search-panel.svg" alt="search-panel">
-					</div> -->
 					<div class="header__search-panel">
 						<input type="text" maxlength= "12" placeholder="Search" class="searchbar">
 						<img src="assets\imgs\search-glass.svg" alt="search icon" class="button">
@@ -52,22 +49,22 @@
 	</header>
     <main class="main" style="height: 80vh;">
 		<div class="main__content-wrapper">
-                <form class="create-post-container">
-                    <input type="file" id="post_image" name="post_image">
-					<!-- <br> -->
-                    <label for="autor_name" class="post-for-item">Автор</label>
-					<!-- <br> -->
-                    <input type="text" id="autor_name" name="autor_name">
-					<!-- <br> -->
-                    <label for="post_title" class="post-for-item">Название</label>
-					<!-- <br> -->
-                    <input type="text" id="post_title" name="post_title">
-					<!-- <br> -->
-                    <label for="post_tags" class="post-for-item">Теги</label>
-					<!-- <br> -->
-                    <input type="text" id="post_tags" name="post_tags">
-					<!-- <br> -->
-                  </form>
+			<form class="create-post-container">
+				<label id="custom-file-upload">
+					<!-- Choose images to upload (PNG, JPG) -->
+					<input type="file" id="post_image" name="post_image" accept="image/*"
+					onchange="handleFiles(this.files)"
+					multiple>
+					<img src="assets\imgs\cloud.png" alt="" width="80px" height="80px" style="opacity: 0.7;">
+					<div class="custom-file-upload__text">Загрузите свои изображения</div>
+				</label>
+				<label for="autor_name" class="post-for-item">Автор</label>
+				<input type="text" id="autor_name" name="autor_name">
+				<label for="post_title" class="post-for-item">Название</label>
+				<input type="text" id="post_title" name="post_title">
+				<label for="post_tags" class="post-for-item">Теги</label>
+				<input type="text" id="post_tags" name="post_tags">
+			</form>
         </div>
 	</main>
     <footer>
@@ -127,5 +124,5 @@
 			</div>
 	</footer>
 </body>
-
+<script src="assets\scripts\drug&drop.js"></script>
 </html>
