@@ -36,7 +36,18 @@ function handleDrop(e) {
 
 //files is not an array, but a FileList
 function handleFiles(files) {
-    ([...files]).forEach(uploadFile);
+    ([...files]).forEach(previewFile);
 }
 
 function uploadFile(file) {}
+
+function previewFile(file) {
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = function() {
+      let img = document.createElement('img');
+      img.src = reader.result;
+      document.getElementById('gallery').appendChild(img);
+    }
+}
+  

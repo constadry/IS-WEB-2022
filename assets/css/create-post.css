@@ -1,6 +1,7 @@
 .create-post-container {
     width: 37%;
     margin: 0 auto;
+    padding-bottom: 8px;
     height: 84vh;
     display: flex;
     border-style: solid;
@@ -31,18 +32,30 @@
     font-weight: 100;
     text-transform: uppercase;
     color: #1b1b1b;
+    text-align: center;
 }
 
 input[type="file"] {
     display: none;
 }
 
-.create-post-container input {
-    margin: 3px auto;
+#gallery {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.create-post-container input:last-child {
-    margin-bottom: 14px;
+#gallery img {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.create-post-container input {
+    margin: 3px auto;
 }
 
 /* TODO: подбирать с помощью js ширину соседа */
@@ -50,9 +63,26 @@ input[type="file"] {
     margin-left: 30px;
 }
 
-.create-post-container input[type=text] {
+.create-post-container input[type=text], input[type=submit] {
     width: 90%;
     height: 3.67%;
+}
+
+#post-submit {
+    margin-top: 8px;
+    height: 5%;
+    border: none;
+    border-radius: 12px;
+    background-color: #883996c3;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+}
+
+#post-submit:hover {
+    box-shadow: 0 5px 15px #883996de;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
 }
 
 @media only screen and (max-width: 1024px) {
