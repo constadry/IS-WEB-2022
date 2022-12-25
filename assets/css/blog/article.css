@@ -1,0 +1,21 @@
+.articles {
+    margin-top: 100px;
+}
+
+.article {
+    height: 600px;
+}
+
+.article__img {
+    height: 420px;
+    margin-bottom: 15px;
+}
+
+.article__title {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.article__description {
+    height: 100px;
+}
