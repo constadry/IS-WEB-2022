@@ -5,7 +5,8 @@
 	<title>AOPS - upload & download photo simply</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="assets\css\reset.css">
-	<link href="assets\css\outlines.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets\css\outlines.css" >
+	<link rel="stylesheet" href="assets\css\catalog\categories.css" >
 	<meta charset="utf-8">
 	<script src="assets\scripts\detectPage.js"></script>
 	<link rel="shortcut icon" type="image/jpg" href="assets\imgs\favicon.ico" />
@@ -34,8 +35,8 @@
 						</label>
 
 						<nav class="header__catalog">
-							<a class="header__catalog-item" href="..\catalog.html">Каталог</a>
-							<a class="header__catalog-item" href="..\blog.html">Блог</a>
+							<a class="header__catalog-item" href="/">Каталог</a>
+							<a class="header__catalog-item" href="/blog.html">Блог</a>
 							<a class="header__catalog-item" href="..\create-post.html" id="create-post">Создать</a>
 						</nav>
 					</div>
@@ -47,80 +48,34 @@
 		</div>
 	</header>
 	<main class="main">
-		<div class="frases">
-			<div class="frases-items__wrapper">
-				<div class="frases__title">AOPS</div>
-				<div class="frases__item">Поиск вдохновения </div>
-				<div class="frases__item">Возможность поделиться чем-то новым</div>
-			</div>
-		</div>
 		<div class="main__content-wrapper">
-			<div class="galery">
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item1.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item2.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item3.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item4.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item5.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item6.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-			</div>
-			<div class="show-more-btn_wrapper">
-				<button class="show-more-btn">
-					<span class="show-more-btn__text">
-						Показать больше
-					</span>
-				</button>
-			</div>
-		</div>
-
-	</main>
+            <div class="categories">
+                <a href="" class="category">
+                    <img src="assets\imgs\categories\Altai-.jpg" alt="" class="category__img">
+                    <span class="category__title font-title">Горы</span>
+                </a>
+                <a href="" class="category">
+                    <img src="assets\imgs\categories\city.jpg" alt="" class="category__img">
+                    <span class="category__title font-title">Города</span>
+                </a>
+                <a href="" class="category">
+                    <img src="assets\imgs\categories\people.jfif" alt="" class="category__img">
+                    <span class="category__title font-title">Люди</span>
+                </a>
+                <a href="" class="category">
+                    <img src="assets\imgs\categories\cats.jpg" alt="" class="category__img">
+                    <span class="category__title font-title">Животные</span>
+                </a>
+                <a href="" class="category">
+                    <img src="assets\imgs\categories\food.jfif" alt="" class="category__img">
+                    <span class="category__title font-title">Еда</span></a>
+                <a href="" class="category">
+                    <img src="assets\imgs\categories\tech.jpg" alt="" class="category__img">
+                    <span class="category__title font-title">Техника</span>
+                </a>
+            </div>
+        </div>
+    </main>
 	<footer>
 		<div class="footer__first-line">
 			<div class="footer__logo">
