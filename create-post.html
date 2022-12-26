@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="assets\css\reset.css">
 	<link href="assets\css\outlines.css" rel="stylesheet">
+	<link href="assets\css\create-post.css" rel="stylesheet">
 	<meta charset="utf-8">
-	<script src="assets\scripts\detectPage.js"></script>
 	<link rel="shortcut icon" type="image/jpg" href="assets\imgs\favicon.ico" />
+    <script src="assets\scripts\detectPage.js"></script>
 </head>
 
 <body>
@@ -34,8 +35,8 @@
 						</label>
 
 						<nav class="header__catalog">
-							<a class="header__catalog-item" href="..\catalog.html">Каталог</a>
-							<a class="header__catalog-item" href="..\blog.html">Блог</a>
+							<a class="header__catalog-item" href="/">Каталог</a>
+							<a class="header__catalog-item" href="/">Блог</a>
 							<a class="header__catalog-item" href="..\create-post.html" id="create-post">Создать</a>
 						</nav>
 					</div>
@@ -46,82 +47,29 @@
 			</div>
 		</div>
 	</header>
-	<main class="main">
-		<div class="frases">
-			<div class="frases-items__wrapper">
-				<div class="frases__title">AOPS</div>
-				<div class="frases__item">Поиск вдохновения </div>
-				<div class="frases__item">Возможность поделиться чем-то новым</div>
-			</div>
-		</div>
+    <main class="main" style="height: 80vh;">
 		<div class="main__content-wrapper">
-			<div class="galery">
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item1.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item2.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item3.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item4.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item5.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item6.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-			</div>
-			<div class="show-more-btn_wrapper">
-				<button class="show-more-btn">
-					<span class="show-more-btn__text">
-						Показать больше
-					</span>
-				</button>
-			</div>
-		</div>
-
+			<form class="create-post-container">
+				<label id="custom-file-upload">
+					<!-- Choose images to upload (PNG, JPG) -->
+					<input type="file" id="post_image" name="post_image" accept="image/*"
+					onchange="handleFiles(this.files)"
+					multiple>
+					<img src="assets\imgs\cloud.png" alt="" width="80px" height="80px" style="opacity: 0.7;">
+					<div class="custom-file-upload__text">Загрузите свои изображения</div>
+					<div id="gallery"></div>
+				</label>
+				<label for="autor_name" class="post-for-item">Автор</label>
+				<input type="text" id="autor_name" name="autor_name">
+				<label for="post_title" class="post-for-item">Название</label>
+				<input type="text" id="post_title" name="post_title">
+				<label for="post_tags" class="post-for-item">Теги</label>
+				<input type="text" id="post_tags" name="post_tags">
+				<input type="submit" value="Отправить" id="post-submit">
+			</form>
+        </div>
 	</main>
-	<footer>
+    <footer>
 		<div class="footer__first-line">
 			<div class="footer__logo">
 				<a href="/" class="logo__link">
@@ -178,5 +126,5 @@
 			</div>
 	</footer>
 </body>
-
+<script src="assets\scripts\drug&drop.js"></script>
 </html>

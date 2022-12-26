@@ -5,7 +5,9 @@
 	<title>AOPS - upload & download photo simply</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="assets\css\reset.css">
-	<link href="assets\css\outlines.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets\css\blog\filter.css">
+	<link rel="stylesheet" href="assets\css\blog\article.css">
+	<link rel="stylesheet" href="assets\css\outlines.css">
 	<meta charset="utf-8">
 	<script src="assets\scripts\detectPage.js"></script>
 	<link rel="shortcut icon" type="image/jpg" href="assets\imgs\favicon.ico" />
@@ -34,8 +36,8 @@
 						</label>
 
 						<nav class="header__catalog">
-							<a class="header__catalog-item" href="..\catalog.html">Каталог</a>
-							<a class="header__catalog-item" href="..\blog.html">Блог</a>
+							<a class="header__catalog-item" href="/" id="catalog">Каталог</a>
+							<a class="header__catalog-item" href="..\blog.html" id="blog">Блог</a>
 							<a class="header__catalog-item" href="..\create-post.html" id="create-post">Создать</a>
 						</nav>
 					</div>
@@ -47,79 +49,46 @@
 		</div>
 	</header>
 	<main class="main">
-		<div class="frases">
-			<div class="frases-items__wrapper">
-				<div class="frases__title">AOPS</div>
-				<div class="frases__item">Поиск вдохновения </div>
-				<div class="frases__item">Возможность поделиться чем-то новым</div>
-			</div>
-		</div>
-		<div class="main__content-wrapper">
-			<div class="galery">
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item1.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item2.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item3.jfif" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item4.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item5.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-				<div class="galery__item">
-					<div style="height: 0;">
-						<img src="assets\imgs\image-icon-2.png" alt="img-icn" class="image-icn">
-					</div>
-					<img src="assets\imgs\galery-item6.jpg" alt="Осень" class="post-img">
-					<a href="" class="post-author">John Curle</a>
-					<a href="" class="tag">nature</a>
-				</div>
-
-			</div>
-			<div class="show-more-btn_wrapper">
-				<button class="show-more-btn">
-					<span class="show-more-btn__text">
-						Показать больше
-					</span>
-				</button>
-			</div>
-		</div>
-
+        <div class="main__content-wrapper">
+            <div class="filters">
+                <div class="filter">Глубина резкости</div>
+                <div class="filter">Баланс белого</div>
+                <div class="filter">Экспозиция</div>
+                <div class="filter">Выдержка</div>
+                <div class="filter">Диафрагма</div>
+                <div class="filter">Режимы съемки</div>
+                <div class="filter">Фокусировка</div>
+            </div>
+            <div class="articles">
+                <div class="article">
+                    <img class="article__img" src="assets\imgs\blog\first_blog_img.jfif"></img>
+                    <a class="article__title font-title" href="/">5 Секретов, которым должен научиться каждый фотограф</a>
+                    <div class="article__description font-description">Меня часто спрашивают о так называемых “секретах” моей
+                         фотографической работы. Поскольку я верю в обмен знаниями, я раскрываю некоторые из важнейших
+                          моментов, которые я всегда учитываю в процессе своего создания.</div>
+                </div>
+                <div class="article">
+                    <img class="article__img"></img>
+                    <a class="article__title"></a>
+                    <div class="article__description"></div>
+                </div>
+                <div class="article">
+                    <img class="article__img"></img>
+                    <a class="article__title"></a>
+                    <div class="article__description"></div>
+                </div>
+                <div class="article">
+                    <img class="article__img"></img>
+                    <a class="article__title"></a>
+                    <div class="article__description"></div>
+                </div>
+                <div class="article">
+                    <img class="article__img"></img>
+                    <a class="article__title"></a>
+                    <div class="article__description"></div>
+                </div>
+            </div>
+        </div>
 	</main>
 	<footer>
 		<div class="footer__first-line">

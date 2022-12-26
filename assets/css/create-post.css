@@ -1,0 +1,104 @@
+.create-post-container {
+    width: 37%;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    height: 84vh;
+    display: flex;
+    border-style: solid;
+    border-width: thin;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#custom-file-upload {
+    width: 90%;
+    height: 69%;
+    margin: 10px auto;
+    border: dashed #1b1b1b 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#custom-file-upload.highlight{
+    border: dashed black 2px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+
+.custom-file-upload__text {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #1b1b1b;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#gallery {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery img {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.create-post-container input {
+    margin: 3px auto;
+}
+
+/* TODO: подбирать с помощью js ширину соседа */
+.post-for-item {
+    margin-left: 30px;
+}
+
+.create-post-container input[type=text], input[type=submit] {
+    width: 90%;
+    height: 3.67%;
+}
+
+#post-submit {
+    margin-top: 8px;
+    height: 5%;
+    border: none;
+    border-radius: 12px;
+    background-color: #883996c3;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+}
+
+#post-submit:hover {
+    box-shadow: 0 5px 15px #883996de;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .create-post-container {
+        width: 80%;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .create-post-container {
+        font-size: 22px;
+        height: 70vh;
+    }
+
+    .create-post-container #post_image {
+        height: 55%;
+    }
+}

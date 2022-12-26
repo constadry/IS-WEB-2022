@@ -1,0 +1,50 @@
+.font-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.font-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.article {
+    height: 600px;
+}
+
+.article__img {
+    display: block;
+    margin: 0 auto;
+    height: 420px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.article__img:hover {
+    transform: scale(1.05);
+}
+
+.article__title {
+    text-align: center;
+    display: block;
+    height: 50px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.article__title:hover {
+    text-decoration: underline;
+}
+
+.article__description {
+    text-align: center;
+    height: 100px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
