@@ -1,5 +1,5 @@
 function loadFakeImages() {
-    fetch('https://picsum.photos/v2/list?page=3&limit=6')
+    fetch(`https://picsum.photos/v2/list?page=2&limit=6`)
         .then(response => response.json())
         .then(data => {
             for (const photo of data) {
@@ -32,7 +32,7 @@ function addGaleryItem(photo) {
     let galeryImg = document.createElement('img');
     galeryImg.setAttribute('src', photo.download_url + '.webp');
     // galeryImg.setAttribute('src', photo);
-   
+
     galeryImg.classList.add('post-img');
 
     let author = document.createElement('a');

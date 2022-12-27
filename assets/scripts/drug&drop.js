@@ -47,6 +47,8 @@ function previewFile(file) {
     reader.onloadend = function() {
       let img = document.createElement('img');
       img.src = reader.result;
+      let inp = document.getElementById('post_image');
+      inp.setAttribute('base64', reader.result);
       document.getElementById('gallery').appendChild(img);
     }
 }
