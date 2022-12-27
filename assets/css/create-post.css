@@ -48,8 +48,8 @@ input[type="file"] {
 }
 
 #gallery img {
-    width: 40%;
-    height: 40%;
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
     margin-right: 10px;
 }

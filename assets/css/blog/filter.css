@@ -1,8 +1,10 @@
 .filters {
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .filter {
@@ -18,4 +20,10 @@
 
 .filter:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .filters {
+        justify-content: center;
+    }
 }
