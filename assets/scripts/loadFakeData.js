@@ -6,11 +6,6 @@ function loadFakeImages() {
                 addGaleryItem(photo);
             }
         });
-
-    // for (let i = 0; i < 6; i++) {
-    //     fetch('https://picsum.photos/600/600.webp')
-    //         .then(response => addGaleryItem(response));
-    // }
 }
 
 function addGaleryItem(photo) {
@@ -31,8 +26,6 @@ function addGaleryItem(photo) {
     
     let galeryImg = document.createElement('img');
     galeryImg.setAttribute('src', photo.download_url + '.webp');
-    // galeryImg.setAttribute('src', photo);
-
     galeryImg.classList.add('post-img');
 
     let author = document.createElement('a');
