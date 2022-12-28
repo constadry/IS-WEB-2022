@@ -7,6 +7,10 @@ function serializeForm(formNode) {
           const { name, value } = element;
           if (name === "post_image") {
             post[name] = element.getAttribute('base64');
+            if (post[name] === null) {
+              alert("Download an image, please");
+              throw new Exeption("Image is null");
+            }
           }
           else
             post[name] = value;
